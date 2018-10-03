@@ -1,9 +1,5 @@
-### Doubly linked list
-
+### Trainings
 ---
-⚠️ DO NOT SUBMIT PRS TO THIS REPO ⚠️
-
-
 
 ### Prerequisites
 * Install [nodejs](https://nodejs.org/en/) (>= v6.9.4)
@@ -23,5 +19,3 @@ npm start
 open http://localhost:8080
 
 ---
-
-© [Shastel](https://github.com/Shastel)
