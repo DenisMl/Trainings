@@ -1,4 +1,10 @@
 module.exports = function(arr) {
+  /**
+   *
+   * @param left
+   * @param right
+   * @returns {*[]}
+   */
   function merge(left, right) {
     let result = [];
     let il = 0;
@@ -14,6 +20,11 @@ module.exports = function(arr) {
     return result.concat(left.slice(il)).concat(right.slice(ir));
   }
 
+  /**
+   *
+   * @param items
+   * @returns {*}
+   */
   function mergeSort(items) {
     if (items.length < 2) {
       return items;
