@@ -7,6 +7,11 @@ class LinkedList {
     this._tail = null;
   }
 
+  /**
+   *
+   * @param data
+   * @returns {LinkedList}
+   */
   append(data) {
     const node = new Node(data);
     if (this.length) {
@@ -40,6 +45,11 @@ class LinkedList {
     }
   }
 
+  /**
+   *
+   * @param index
+   * @returns {*}
+   */
   at(index) {
     if (this.length === 0 || index < 0 || index > this.length) {
       return this;
@@ -53,10 +63,15 @@ class LinkedList {
     }
   }
 
+  /**
+   *
+   * @param index
+   * @param data
+   * @returns {LinkedList}
+   */
   insertAt(index, data) {
     if (this.length === 0 || index < 0 || index > this.length) {
       return this;
-
     }
     else {
       const node = new Node(data);
@@ -69,17 +84,24 @@ class LinkedList {
       currentNode.prev = node;
       currentPrevNode.next = node;
       node.prev = currentPrevNode;
-
     }
     this.length++;
     return this;
   }
 
+  /**
+   *
+   * @returns {boolean}
+   */
   isEmpty() {
     return !this.length;
 
   }
 
+  /**
+   *
+   * @returns {LinkedList}
+   */
   clear() {
     let currentNode = this._head;
     let currentNextNode = currentNode.next;
@@ -98,6 +120,11 @@ class LinkedList {
     return this;
   }
 
+  /**
+   *
+   * @param index
+   * @returns {LinkedList}
+   */
   deleteAt(index) {
     if (this.length === 0 || index < 0 || index > this.length) {
       return this;
@@ -107,7 +134,6 @@ class LinkedList {
       for (let i = 0; i < index; i++) {
         currentNode = currentNode.next;
       }
-
       if (currentNode.next) {
         if (currentNode.prev) {
           currentNode.next.prev = currentNode.prev;
@@ -130,6 +156,10 @@ class LinkedList {
     }
   }
 
+  /**
+   *
+   * @returns {LinkedList}
+   */
   reverse() {
     let currentNode = this._head;
     let nextNode = null;
@@ -145,6 +175,11 @@ class LinkedList {
     return this;
   }
 
+  /**
+   *
+   * @param data
+   * @returns {number}
+   */
   indexOf(data) {
     let currentNode = this._head;
     for (let i = 0; i < this.length; i++) {
