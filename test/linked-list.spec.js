@@ -1,5 +1,5 @@
 const Node = require('../src/node');
-const LinkedList = require('../src/linked-list');
+const LinkedList = require('../src/linkedList');
 
 describe('LinkedList', () => {
   describe('#constructor', () => {
