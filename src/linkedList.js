@@ -8,6 +8,7 @@ class LinkedList {
   }
 
   /**
+   * Append the list
    *
    * @param data
    * @returns {LinkedList}
@@ -27,6 +28,11 @@ class LinkedList {
     return this;
   }
 
+  /**
+   * Check list head existence
+   *
+   * @returns {boolean}
+   */
   head() {
     if (this._head) {
       return this._head.data;
@@ -36,6 +42,11 @@ class LinkedList {
     }
   }
 
+  /**
+   * Check list tail existence
+   *
+   * @returns {boolean}
+   */
   tail() {
     if (this._tail) {
       return this._tail.data
@@ -46,6 +57,7 @@ class LinkedList {
   }
 
   /**
+   * Get the data from list by index
    *
    * @param index
    * @returns {*}
@@ -64,6 +76,7 @@ class LinkedList {
   }
 
   /**
+   * Insert data in list by index
    *
    * @param index
    * @param data
@@ -90,6 +103,7 @@ class LinkedList {
   }
 
   /**
+   * Check if list is empty
    *
    * @returns {boolean}
    */
@@ -99,6 +113,7 @@ class LinkedList {
   }
 
   /**
+   * Clear the list data
    *
    * @returns {LinkedList}
    */
@@ -121,6 +136,7 @@ class LinkedList {
   }
 
   /**
+   * Remove data in list by index
    *
    * @param index
    * @returns {LinkedList}
@@ -157,6 +173,7 @@ class LinkedList {
   }
 
   /**
+   * Revers the list data order
    *
    * @returns {LinkedList}
    */
@@ -176,6 +193,7 @@ class LinkedList {
   }
 
   /**
+   * Get the data index
    *
    * @param data
    * @returns {number}

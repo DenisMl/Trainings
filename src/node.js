@@ -1,3 +1,6 @@
+/**
+ * List node item
+ */
 class Node {
   constructor(data = null, prev = null, next = null) {
     this.data = data;

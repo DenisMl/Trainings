@@ -1,5 +1,6 @@
 module.exports = function(arr) {
   /**
+   * Sort two subarrays
    *
    * @param left
    * @param right
@@ -21,6 +22,7 @@ module.exports = function(arr) {
   }
 
   /**
+   * Sort array with merge sort
    *
    * @param items
    * @returns {*}
